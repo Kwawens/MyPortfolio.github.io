@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
 
+* {
+    scroll-behavior: smooth;
+}
 body {
     padding-bottom: 20px;
 }
@@ -36,4 +40,11 @@ body {
 }
 .cbody {
     height: 280px;
+}
+.intro:hover, .card:hover {
+    transform: scale(1.05);
+
+}
+.card-text {
+    font-family: 'Inclusive Sans', sans-serif;
 }
