@@ -1,82 +1,136 @@
 [
-    {
-      "date": "September 25, 2023",
-      "text": [
-        "In our practical research, all groups submitted their 3 project proposals.",
-        "We greeted and sang 'Happy Birthday' to Ma'am Dianne because it's her day.",
-        "I had dinner at Jollibee with my friends."
-      ]
-    },
-    {
-      "date": "September 26, 2023",
-      "text": [
-        "In our physical education class, we learned and did some dance.",
-        "I had dinner at Mcdo with my friends because it's raining.",
-        "The jeepney we were riding was hit by another jeepney near NCBA."
-      ]
-    },
-    {
-      "date": "September 27, 2023",
-      "text": [
-        "We did a lot of activity in 'Pagbasa at Pagsusuri ng Iba't Ibang Teksto Tungo sa Pananaliksik'.",
-        "We don't have an 'EAPP' class because our teacher had a meeting.",
-        "Regarding clubs, most of our classmates weren't able to register for their first choice, so they had to reselect their second choice.",
-        "I just started working on my journal."
-      ]
-    },
-    {
-      "date": "September 28, 2023",
-      "text": [
-        "I uploaded this journal on GitHub to make it accessible anytime",
-        "It was raining heavily but thank goodness it wasn't raining when we were about to go home",
-        "I had dinner at Jollibee with my friends."
-      ]
-    },
-    {
-      "date": "September 29, 2023",
-      "text": [
-        "I've been thinking about my homework for tomorrow and haven't done anything all day because I got sick."
-      ]
-    },
-    {
-      "date": "September 30, 2023",
-      "text": [
-        "I woke up early and i'm feeling much better than yesterday.",
-        "I finished all my assignments for the day.",
-        "I added a search bar and a database to this journal, arranged it in descending order and did some code cleaning."
-      ]
-    },
-    {
-      "date": "October 1, 2023",
-      "text": [
-        "I just did some house work and some assignments that needed for the whole week then the rest are doing my hobbies."
-      ]
-    },
-    {
-      "date": "October 2, 2023",
-      "text": [
-        "Nothing much special about this day we just did some activities and also ma'am Dianne announced the date of our title defense."
-      ]
-    },
-    {
-      "date": "October 3, 2023",
-      "text": [
-        "In our Physical Education, we just practice dancing and sir announced important things after that.",
-        "In our Physical Science, we just also did an group activity, sir announced our iLs and we selected our group members."
-      ]
-    },
-    {
-      "date": "October 4, 2023",
-      "text": [
-        "We did some groupings on EAPP and reported our last group works.",
-        "Thankfully i passed on our long quiz in Personal Development subject.",
-        "For our upcoming title defense tomorrow we have a meeting and we double checked the presentation then add more details into it."
-      ]
-    },
-    {
-      "date": "October 5, 2023",
-      "text": [
-        "Writting..."
-      ]
-    }
+  {
+    "date": "September 25, 2023",
+    "text": [
+      "In our practical research, all groups submitted their 3 project proposals.",
+      "We greeted and sang 'Happy Birthday' to Ma'am Dianne because it's her day.",
+      "I had dinner at Jollibee with my friends."
+    ]
+  },
+  {
+    "date": "September 26, 2023",
+    "text": [
+      "In our physical education class, we learned and did some dance.",
+      "I had dinner at Mcdo with my friends because it's raining.",
+      "The jeepney we were riding was hit by another jeepney near NCBA."
+    ]
+  },
+  {
+    "date": "September 27, 2023",
+    "text": [
+      "We did a lot of activity in 'Pagbasa at Pagsusuri ng Iba't Ibang Teksto Tungo sa Pananaliksik'.",
+      "We don't have an 'EAPP' class because our teacher had a meeting.",
+      "Regarding clubs, most of our classmates weren't able to register for their first choice, so they had to reselect their second choice.",
+      "I just started working on my journal."
+    ]
+  },
+  {
+    "date": "September 28, 2023",
+    "text": [
+      "I uploaded this journal on GitHub to make it accessible anytime",
+      "It was raining heavily but thank goodness it wasn't raining when we were about to go home",
+      "I had dinner at Jollibee with my friends."
+    ]
+  },
+  {
+    "date": "September 29, 2023",
+    "text": [
+      "I've been thinking about my homework for tomorrow and haven't done anything all day because I got sick."
+    ]
+  },
+  {
+    "date": "September 30, 2023",
+    "text": [
+      "I woke up early and i'm feeling much better than yesterday.",
+      "I finished all my assignments for the day.",
+      "I added a search bar and a database to this journal, arranged it in descending order and did some code cleaning."
+    ]
+  },
+  {
+    "date": "October 1, 2023",
+    "text": [
+      "I just did some house work and some assignments that needed for the whole week then the rest are doing my hobbies."
+    ]
+  },
+  {
+    "date": "October 2, 2023",
+    "text": [
+      "Nothing much special about this day we just did some activities and also ma'am Dianne announced the date of our title defense."
+    ]
+  },
+  {
+    "date": "October 3, 2023",
+    "text": [
+      "In our Physical Education, we just practice dancing and sir announced important things after that.",
+      "In our Physical Science, we just also did an group activity, sir announced our iLs and we selected our group members."
+    ]
+  },
+  {
+    "date": "October 4, 2023",
+    "text": [
+      "We did some groupings on EAPP and reported our last group works.",
+      "Thankfully i passed on our long quiz in Personal Development subject.",
+      "For our upcoming title defense tomorrow we have a meeting and we double checked the presentation then add more details into it."
+    ]
+  },
+  {
+    "date": "October 5, 2023",
+    "text": [
+      "I nearly got late for my first subject because there was so much traffic.",
+      "Ma'am Chicklet didn't have a lesson today so that we can get ready for our title defense.",
+      "Thankfully and sadly, our 2nd title got rejected and we're going to re-defend our 1st title soon.",
+      "Our advisor announced that our homeroom schedule is going to be rescheduled because sir has another class at that time."
+    ]
+  },
+  {
+    "date": "October 6, 2023",
+    "text": [
+      "My cousin dropped by our home and used my PC to work on his engineering project.",
+      "I have completed all three of my assignments for tomorrow so that i won't have to think about them when I get home."
+    ]
+  },
+  {
+    "date": "October 7, 2023",
+    "text": [
+      "Not much special happened today. We did some activities, discussed a new lesson and also took part in a survey conducted by college students about programming."
+    ]
+  },
+  {
+    "date": "October 8, 2023",
+    "text": [
+      "It's Sunday and it's my rest day, so I just did some assignments and rested.",
+      "I added a new feature to this journal which is a modal slider that makes it easier to focus on one slide at a time and allows you to navigate to the next or previous slide.",
+      "Our club president announced that we have a meeting tomorrow."
+    ]
+  },
+  {
+    "date": "October 9, 2023",
+    "text": [
+      "I woke up early to get ready for our first face-to-face club meeting, i met our new officers and they are nice.",
+      "I arrived too early at the meeting and waited for others to arrive. We discussed upcoming events and plans for the club.",
+      "I'm tired for today, so I hopped on a voice call just to clarify something about our dance practice for tomorrow then sleep."
+    ]
+  },
+  {
+    "date": "October 10, 2023",
+    "text": [
+      "I started working on our iLs experiment for physical science and i'll check tomorrow and provide my documents to my group so that my other group members can complete the other part they're assigned to do.",
+      "We practiced some dance steps for our iLs in Physical Education and our music for it is 'Butter' by BTS.",
+      "Afterward, we went to the library to review for our next subject because there will be a quiz later on. We completed our quiz and hopefully we will get a high or passing score."
+    ]
+  },
+  {
+    "date": "October 11, 2023",
+    "text": [
+      "Nothing much special about this day, we just discussed the new lesson.",
+      "In our Personal Development iLs, we assigned roles to each member to have everyone participation.",
+      "After class, we had a small practice session for our Physical Education iLs dance."
+    ]
+  },
+  {
+    "date": "October 12, 2023",
+    "text": [
+      "Writting..."
+    ]
+  }
 ]

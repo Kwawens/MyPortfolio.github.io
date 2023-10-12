@@ -4,8 +4,18 @@ let originalCardData;
 
 function convertToDateFormat(date, type = "/") {
     const months = [
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
+        "January", 
+        "February", 
+        "March", 
+        "April", 
+        "May", 
+        "June", 
+        "July", 
+        "August", 
+        "September", 
+        "October", 
+        "November", 
+        "December"
     ];
     const parts = date.split(" ");
     const monthIndex = months.indexOf(parts[0]);
@@ -51,7 +61,9 @@ function filterCards(query) {
             <div class="card shadow-sm h-100 d-flex flex-column" id="${count}">
             <img class="bd-placeholder-img card-img-top" src="images/dates/${convertToDateFormat(card.date, "-")}.png">
             <div class="card-body cbody">
-                <p class="card-text">- ${card.text.join("<br>- ")}</p>
+                <div class="scrollable-card-text">
+                    <p class="card-text">- ${card.text.join("<br>- ")}</p>
+                </div>
             </div>
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
@@ -86,6 +98,51 @@ function filterCards(query) {
         journalDropdown.appendChild(li);
     });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const cardContainer = document.getElementById('cardContainer');
+    const cards = cardContainer.getElementsByClassName('card');
+  
+    let currentCardIndex = 0;
+    
+    function updateModalContent() {
+        const modalBody = document.querySelector('.modal-body');
+        modalBody.innerHTML = cards[currentCardIndex].innerHTML;
+    }
+  
+    function showCardModal() {
+        updateModalContent();
+        $('#cardModal').modal('show');
+    }
+    
+    function closeModal() {
+        $('#cardModal').modal('hide');
+    }
+
+    cardContainer.addEventListener('click', function (e) {
+        const clickedCard = e.target.closest('.card');
+        if(clickedCard){
+            currentCardIndex = Array.from(cards).indexOf(clickedCard);
+            showCardModal();
+        }
+    });
+    
+    document.getElementById('prevCardBtn').addEventListener('click', function () {
+        if(currentCardIndex < cards.length - 1){
+            currentCardIndex++;
+            updateModalContent();
+        }
+    });
+  
+    document.getElementById('nextCardBtn').addEventListener('click', function () {
+        if(currentCardIndex > 0){
+            currentCardIndex--;
+            updateModalContent();
+        }
+    });
+
+    document.getElementById('closeModalBtn').addEventListener('click', closeModal);
+});
 
 fetch('journal.json')
     .then(response => response.json())
