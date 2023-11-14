@@ -3,7 +3,7 @@ const cardContainer = document.getElementById("cardContainer");
 let originalCardData;
 
 function convertToDateFormat(date, type = "/") {
-    const months = [
+    var months = [
         "January", 
         "February", 
         "March", 
@@ -17,18 +17,18 @@ function convertToDateFormat(date, type = "/") {
         "November", 
         "December"
     ];
-    const parts = date.split(" ");
-    const monthIndex = months.indexOf(parts[0]);
-    const day = parts[1].replace(",", "");
-    const year = parts[2];
-    const convertedDate = `${(monthIndex + 1).toString().padStart(2, '0')}${type}${day.padStart(2, '0')}${type}${year}`;
+    var parts = date.split(" ");
+    var monthIndex = months.indexOf(parts[0]);
+    var day = parts[1].replace(",", "");
+    var year = parts[2];
+    var convertedDate = `${(monthIndex + 1).toString().padStart(2, '0')}${type}${day.padStart(2, '0')}${type}${year}`;
     return convertedDate;
 }
 
 function getDayOfWeekLabel(dateString) {
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const date = new Date(dateString);
-    const dayOfWeekIndex = date.getDay();
+    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var date = new Date(dateString);
+    var dayOfWeekIndex = date.getDay();
     return daysOfWeek[dayOfWeekIndex];
 }
 
@@ -37,16 +37,16 @@ function filterCards(query) {
         cardContainer.removeChild(cardContainer.firstChild);
     }
 
-    const lowercaseQuery = query.toLowerCase();
-    const filteredData = originalCardData.filter(card => {
-        const lowercaseDate = convertToDateFormat(card.date).toLowerCase();
-        const lowercaseContent = card.text.join(" ").toLowerCase();
-        const dayOfWeekLabel = getDayOfWeekLabel(card.date);
+    var lowercaseQuery = query.toLowerCase();
+    var filteredData = originalCardData.filter(card => {
+        var lowercaseDate = convertToDateFormat(card.date).toLowerCase();
+        var lowercaseContent = card.text.join(" ").toLowerCase();
+        var dayOfWeekLabel = getDayOfWeekLabel(card.date);
     
-        const convertedDateMatch = lowercaseDate.includes(lowercaseQuery);
-        const originaldateMatch = card.date.toLowerCase().includes(lowercaseQuery);
-        const contentMatch = lowercaseContent.includes(lowercaseQuery);
-        const dayOfWeekMatch = dayOfWeekLabel.toLowerCase().includes(lowercaseQuery);
+        var convertedDateMatch = lowercaseDate.includes(lowercaseQuery);
+        var originaldateMatch = card.date.toLowerCase().includes(lowercaseQuery);
+        var contentMatch = lowercaseContent.includes(lowercaseQuery);
+        var dayOfWeekMatch = dayOfWeekLabel.toLowerCase().includes(lowercaseQuery);
     
         return convertedDateMatch || originaldateMatch || contentMatch || dayOfWeekMatch;
     });
@@ -77,7 +77,7 @@ function filterCards(query) {
         `;
         cardContainer.appendChild(cardDiv);
 
-        const formatDate = convertToDateFormat(card.date);
+        var formatDate = convertToDateFormat(card.date);
         journalDatabase[count] = {
             "count": count,
             "date": card.date,
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentCardIndex = 0;
     
     function updateModalContent() {
-        const modalBody = document.querySelector('.modal-body');
+        var modalBody = document.querySelector('.modal-body');
         modalBody.innerHTML = cards[currentCardIndex].innerHTML;
     }
   
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     cardContainer.addEventListener('click', function (e) {
-        const clickedCard = e.target.closest('.card');
+        var clickedCard = e.target.closest('.card');
         if(clickedCard){
             currentCardIndex = Array.from(cards).indexOf(clickedCard);
             showCardModal();
@@ -150,7 +150,7 @@ fetch('journal.json')
         originalCardData = cardData;
         filterCards("");
         searchInput.addEventListener("input", () => {
-            const searchQuery = searchInput.value.trim();
+            var searchQuery = searchInput.value.trim();
             filterCards(searchQuery);
         });
     })
