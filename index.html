@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Clarence Dale Francisco">
-  <title>My Portfolio - Francisco, Clarence Dale</title>
+  <link rel="icon" href="images/icon.png" type="image/png">
+  <title>Clarence's Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body id="top">
   <div id="introduction">
-    <nav class="navbar navbar-expand-lg bg-body-secondary bg-gradient rounded" aria-label="Twelfth navbar">
+    <nav class="navbar navbar-expand-lg bg-body-secondary bg-gradient rounded" aria-label="navbar">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,7 +30,7 @@
             <li class="drop nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown">Page Navigation</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#introduction">Introduction</a></li>
+                <li><a class="dropdown-item" href="#top">About Me</a></li>
                 <li>
                   <a class="dropdown-item" href="#journal"> Journal </a>
                   <ul class="dropdown-menu dropdown-submenu" id="journalDropdown">
@@ -47,10 +48,10 @@
     <div class="intro row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Hi! Im Clarence Dale A. Francisco</h1>
-        <p class="lead">Age: 16 <br>Gender: Male<br>Birthday: October 28, 2006<br>Address: Binangonan, Rizal<br></p>
+        <p class="lead">Age: {age} <br>Gender: Male<br>Birthday: October 28, 2006<br>Address: Binangonan, Rizal</p>
       </div>
       <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
-          <img class="img-fluid rounded-lg-3" src="images/profile_picture.jpg" alt="" width="380">
+          <img class="img-fluid rounded-lg-3" src="images/profile_picture.jpg" alt="profile_picture" width="380">
       </div>
     </div>
   </div>

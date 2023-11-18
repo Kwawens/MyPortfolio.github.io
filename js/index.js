@@ -1,5 +1,15 @@
 const searchInput = document.getElementById("searchInput");
 const cardContainer = document.getElementById("cardContainer");
+
+var leadElement = document.querySelector(".lead");
+var birthdayMatch = leadElement.innerHTML.match(/Birthday: (\w+ \d+, \d+)/);
+var birthday = new Date(birthdayMatch[1]);
+var currentDate = new Date();
+var age = currentDate.getFullYear() - birthday.getFullYear() - (currentDate.getMonth() < birthday.getMonth() || (currentDate.getMonth() === birthday.getMonth() && currentDate.getDate() < birthday.getDate()) ? 1 : 0);
+var newContent = leadElement.innerHTML.replace("{age}", age);
+
+leadElement.innerHTML = newContent;
+
 let originalCardData;
 
 function convertToDateFormat(date, type = "/") {

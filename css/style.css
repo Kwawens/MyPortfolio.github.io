@@ -40,9 +40,9 @@ body {
 .card-text {
     font-family: 'Inclusive Sans', sans-serif;
 }
-.divider {
-    margin: 5rem 0;
-}
+/* .divider {
+    width: 98% !important;
+} */
 hr {
     margin: 1rem 0;
     color: inherit;
